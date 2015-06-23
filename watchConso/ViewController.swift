@@ -14,6 +14,11 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         "EDF", "GDF", "Virement Papa", "Carrefour",
         "SFR", "Amazon"
     ]
+    private let dwarvesMontant = [
+        "10 euros", "20 euros", "30 euros", "40 euros",
+        "100 euros", "200 euros"
+    ]
+    
     let simpleTableIdentifier = "SimpleTableIdentifier"
 
     override func viewDidLoad() {
@@ -43,7 +48,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
             let image = UIImage(named: "logo-vac")
             cell!.imageView!.image = image
         
-            cell!.detailTextLabel?.text = "125,75 euros"
+            cell!.detailTextLabel?.text = dwarvesMontant[indexPath.row]
 
             cell!.textLabel!.text = dwarves[indexPath.row]
             
