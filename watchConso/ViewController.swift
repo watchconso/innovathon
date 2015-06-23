@@ -18,6 +18,11 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         "10 euros", "20 euros", "30 euros", "40 euros",
         "100 euros", "200 euros"
     ]
+    private let dwarvesImages = [
+        "logo-fam", "logo-fam", "logo-fam", "logo-alim",
+        "logo-fam", "logo-vac"
+    ]
+    
     
     let simpleTableIdentifier = "SimpleTableIdentifier"
 
@@ -45,11 +50,11 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
                     style: UITableViewCellStyle.Value1,
                     reuseIdentifier: simpleTableIdentifier)
             }
-            let image = UIImage(named: "logo-vac")
+            let image = UIImage(named: dwarvesImages[indexPath.row])
             cell!.imageView!.image = image
-        
+            
+            
             cell!.detailTextLabel?.text = dwarvesMontant[indexPath.row]
-
             cell!.textLabel!.text = dwarves[indexPath.row]
             
             
