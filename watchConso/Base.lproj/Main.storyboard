@@ -43,6 +43,15 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="dgz-cq-dC4"/>
                                 </connections>
                             </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i0L-Pb-qex">
+                                <rect key="frame" x="-112" y="269" width="824" height="63"/>
+                                <state key="normal" title="Ajouter une opération">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="6ak-9w-2IG" kind="presentation" id="uvJ-rO-mpo"/>
+                                </connections>
+                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-ca" translatesAutoresizingMaskIntoConstraints="NO" id="aCb-KU-y0f">
                                 <rect key="frame" x="0.0" y="20" width="78" height="73"/>
                             </imageView>
@@ -71,7 +80,23 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="275" y="441"/>
+            <point key="canvasLocation" x="-94" y="-395"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Jmg-My-epM">
+            <objects>
+                <viewController id="6ak-9w-2IG" sceneMemberID="viewController">
+                    <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test new page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8qd-tb-U8i">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lbi-yh-trp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-94" y="314"/>
         </scene>
     </scenes>
     <resources>
