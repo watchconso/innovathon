@@ -32,38 +32,90 @@
                         <separator width="0.69999999999999996" alignment="center" id="LBl-h1-Kre"/>
                         <group width="1" alignment="left" layout="vertical" id="uf7-lw-1iY">
                             <items>
-                                <group width="1" height="40" alignment="left" id="FDc-Qe-veW">
+                                <group width="1" height="40" alignment="left" id="JUh-N9-udy">
                                     <items>
-                                        <button width="0.5" height="40" alignment="left" title="Maison" id="Fgu-WJ-SXU">
-                                            <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        <button alignment="left" id="HqS-5F-hOV">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="jXZ-Oq-543">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Vie quotidienne" id="gnr-o9-v1E"/>
+                                                </items>
+                                            </group>
                                             <connections>
-                                                <segue destination="bzo-cM-Kef" kind="push" id="dBt-Jz-tGk"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="bUo-j0-0za"/>
                                             </connections>
                                         </button>
-                                        <button width="0.5" height="40" alignment="left" title="Loisir" id="Zox-f2-8Qh">
-                                            <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                        <button alignment="left" id="fH4-1s-Aye">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="7JU-FU-nJq">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Santé" id="ZMh-Vs-C6X"/>
+                                                </items>
+                                            </group>
                                             <connections>
-                                                <segue destination="bzo-cM-Kef" kind="push" id="az2-hE-e2F"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="tda-hq-oFi"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="Zc7-11-kC0">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="FoT-IB-iQ4">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Restaurant" id="TqM-EB-PHW"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="Ly5-el-jyK"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="FVg-FP-Aiv">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="cti-EM-jfU">
+                                                <items>
+                                                    <imageView alignment="left" verticalAlignment="center" image="ico_Transport" id="zqj-iy-V5h"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="ceV-DH-22g"/>
                                             </connections>
                                         </button>
                                     </items>
                                 </group>
-                                <group width="1" height="40" alignment="left" id="9ce-4D-giA">
+                                <group width="1" height="40" alignment="left" id="eek-jS-bwb">
                                     <items>
-                                        <button width="0.5" height="40" alignment="left" title="Divers" id="FTK-jP-kHX">
-                                            <color key="backgroundColor" red="0.15101362292895751" green="0.75814096258010388" blue="0.80439157196969702" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        <button alignment="left" id="Sqc-7n-WTE">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="5xT-j0-YeA">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_SalairesImpôts" id="nwg-Yh-uZ1"/>
+                                                </items>
+                                            </group>
                                             <connections>
-                                                <segue destination="bzo-cM-Kef" kind="push" id="ep4-RN-ybC"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="2yD-4y-Zy4"/>
                                             </connections>
                                         </button>
-                                        <button width="0.5" height="40" alignment="left" title="Fraude" id="Wdh-7N-c9j">
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="font" type="system" pointSize="16"/>
+                                        <button alignment="left" id="0Cg-ZE-YqZ">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="OIl-Xd-aD3">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Loisirs" id="Fat-JC-N4V"/>
+                                                </items>
+                                            </group>
                                             <connections>
-                                                <segue destination="k0E-4f-POT" kind="push" id="zhy-CW-0EW"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="ZH8-TJ-hRt"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="wvz-Zr-OC6">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="2fZ-Pw-pbN">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Autre" id="qGu-MW-olO"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <segue destination="bzo-cM-Kef" kind="push" id="d7X-3B-Tzz"/>
+                                            </connections>
+                                        </button>
+                                        <button alignment="left" id="xzs-71-88c">
+                                            <group key="contentGroup" width="0.25" height="40" alignment="left" id="3Ie-aR-TMg">
+                                                <items>
+                                                    <imageView alignment="center" verticalAlignment="center" image="ico_Fraude" id="S2V-gX-Bcs"/>
+                                                </items>
+                                            </group>
+                                            <connections>
+                                                <segue destination="k0E-4f-POT" kind="push" id="w15-X3-4ko"/>
                                             </connections>
                                         </button>
                                     </items>
@@ -110,7 +162,7 @@
             <objects>
                 <controller identifier="Confirmation" title="Confirmation" id="bzo-cM-Kef" customClass="ConfirmationInterfaceController" customModule="watchConso_WatchKit_Extension">
                     <items>
-                        <label alignment="center" verticalAlignment="center" text="Loisir" id="Yuy-HZ-PBZ"/>
+                        <imageView alignment="center" verticalAlignment="center" image="ico_Restaurant" id="H1w-7I-eis"/>
                         <label alignment="center" verticalAlignment="center" text="Confirmer la categorie ?" textAlignment="center" numberOfLines="2" id="aJu-Di-Udc"/>
                         <group width="1" alignment="left" verticalAlignment="center" id="TYM-QV-fe1">
                             <items>
@@ -130,18 +182,12 @@
             </objects>
             <point key="canvasLocation" x="583" y="99"/>
         </scene>
-        <!--Interface Controller-->
-        <scene sceneID="NJj-YB-02M">
-            <objects>
-                <controller id="Uod-3J-3Ka"/>
-            </objects>
-            <point key="canvasLocation" x="1217" y="99"/>
-        </scene>
         <!--Alerte Fraude-->
         <scene sceneID="bvK-dG-oBu">
             <objects>
                 <controller identifier="Alerte Fraude" title="Alerte Fraude" id="k0E-4f-POT" customClass="AlerteFraudeInterfaceController" customModule="watchConso_WatchKit_Extension">
                     <items>
+                        <imageView alignment="center" verticalAlignment="center" image="ico_Fraude" id="XyN-Es-Qcm"/>
                         <label alignment="center" verticalAlignment="center" text="Confirmer Alerte Fraude ?" textAlignment="center" numberOfLines="2" id="3Bw-yV-u5Z"/>
                         <group width="1" alignment="left" verticalAlignment="center" id="37P-C4-FQb">
                             <items>
@@ -199,6 +245,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ep4-RN-ybC"/>
+        <segue reference="tda-hq-oFi"/>
     </inferredMetricsTieBreakers>
 </document>
