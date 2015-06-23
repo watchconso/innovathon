@@ -95,7 +95,7 @@
                                                 </items>
                                             </group>
                                             <connections>
-                                                <segue destination="bzo-cM-Kef" kind="push" id="ZH8-TJ-hRt"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" identifier="" id="ZH8-TJ-hRt"/>
                                             </connections>
                                         </button>
                                         <button alignment="left" id="wvz-Zr-OC6">
@@ -105,7 +105,7 @@
                                                 </items>
                                             </group>
                                             <connections>
-                                                <segue destination="bzo-cM-Kef" kind="push" id="d7X-3B-Tzz"/>
+                                                <segue destination="bzo-cM-Kef" kind="push" identifier="" id="d7X-3B-Tzz"/>
                                             </connections>
                                         </button>
                                         <button alignment="left" id="xzs-71-88c">
@@ -125,7 +125,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="235" y="99"/>
+            <point key="canvasLocation" x="235" y="-72"/>
         </scene>
         <!--Détail-->
         <scene sceneID="Zpk-2Z-vQo">
@@ -155,7 +155,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="583" y="-219"/>
+            <point key="canvasLocation" x="583" y="-430"/>
         </scene>
         <!--Confirmation-->
         <scene sceneID="7Rj-P0-w0N">
@@ -180,7 +180,56 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="583" y="99"/>
+            <point key="canvasLocation" x="583" y="-72"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="QKP-ke-f3m">
+            <objects>
+                <controller id="2F0-Tf-fsO">
+                    <items>
+                        <group width="1" alignment="left" id="pwH-jH-qfA">
+                            <items>
+                                <label alignment="left" text="Solde au" id="mi1-Sc-Kal"/>
+                                <dateLabel alignment="left" id="ALr-3e-0Pd">
+                                    <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                                </dateLabel>
+                            </items>
+                        </group>
+                        <label alignment="center" text="856,75 €" textAlignment="center" id="DBd-U9-EAd"/>
+                        <table alignment="left" id="J5D-2K-enJ">
+                            <items>
+                                <tableRow id="0XX-dg-pGk">
+                                    <group key="rootItem" width="1" alignment="left" id="bYa-dc-S9T"/>
+                                </tableRow>
+                                <tableRow id="AAj-hM-DK6">
+                                    <group key="rootItem" width="1" alignment="left" id="rSg-pA-yyp">
+                                        <items>
+                                            <imageView alignment="center" verticalAlignment="center" image="ico_Autre" id="vbl-DC-5ia"/>
+                                            <label alignment="left" text="Label" id="vwb-t1-7km"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow id="g5y-Hy-7Ac">
+                                    <group key="rootItem" width="1" alignment="left" id="hx3-YV-ffR"/>
+                                </tableRow>
+                                <tableRow id="OkB-GM-ald">
+                                    <group key="rootItem" width="1" alignment="left" id="XPj-L0-74x"/>
+                                </tableRow>
+                                <tableRow id="et1-vX-gdt">
+                                    <group key="rootItem" width="1" alignment="left" id="Jzt-ly-cAG"/>
+                                </tableRow>
+                                <tableRow id="FT0-B9-tCF">
+                                    <group key="rootItem" width="1" alignment="left" id="kxL-H1-7XB"/>
+                                </tableRow>
+                                <tableRow id="lOu-gt-GzL">
+                                    <group key="rootItem" width="1" alignment="left" id="N0a-Dy-699"/>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="1062" y="-76"/>
         </scene>
         <!--Alerte Fraude-->
         <scene sceneID="bvK-dG-oBu">
@@ -193,6 +242,9 @@
                             <items>
                                 <button width="0.5" alignment="left" title="Valider" id="Wmx-iR-fTi">
                                     <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <segue destination="qCx-UB-iig" kind="push" id="Ddk-bf-U2I"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" alignment="left" title="Annuler" id="PBF-Ug-oT2">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -206,6 +258,18 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="583" y="421"/>
+        </scene>
+        <!--Confirmation Fraude-->
+        <scene sceneID="YzM-To-UA9">
+            <objects>
+                <controller identifier="Confirmation Fraude" title="Confirmation Fraude" id="qCx-UB-iig">
+                    <items>
+                        <imageView alignment="center" verticalAlignment="center" image="ico_Fraude" id="xBi-ZU-QcY"/>
+                        <label alignment="center" verticalAlignment="center" text="Alerte Fraude envoyée avec succés" textAlignment="center" numberOfLines="3" id="jKN-mY-qlc"/>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="884" y="421"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -245,6 +309,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="tda-hq-oFi"/>
+        <segue reference="d7X-3B-Tzz"/>
     </inferredMetricsTieBreakers>
 </document>
