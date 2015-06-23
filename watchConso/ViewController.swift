@@ -12,15 +12,15 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     private let dwarves = [
         "EDF", "GDF", "Virement Papa", "Carrefour",
-        "SFR", "Amazon"
+        "Paie CASA Jan15", "Amazon"
     ]
     private let dwarvesMontant = [
-        "10 euros", "20 euros", "30 euros", "40 euros",
-        "100 euros", "200 euros"
+        "36,76 euros", "45,87 euros", "15 euros", "67,87 euros",
+        "2275,76 euros", "199 euros"
     ]
     private let dwarvesImages = [
-        "Habitation", "Habitation", "Loisirs", "Vie quotidienne",
-        "Vie quotidienne", "Loisirs"
+        "ico_Vie quotidienne", "ico_Vie quotidienne", "ico_Loisirs", "ico_Vie quotidienne",
+        "ico_Salaires", "ico_Loisirs"
     ]
     
     
