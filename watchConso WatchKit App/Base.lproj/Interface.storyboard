@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
     </dependencies>
     <scenes>
-        <!--Détail Opération-->
+        <!--Opération-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Detail" title="Détail Opération" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchConso_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Operation" title="Opération" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchConso_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Carte Pizza DELARTE" id="yJg-aA-LQz"/>
                         <separator alignment="left" id="s5C-51-42a"/>
@@ -49,6 +49,20 @@
                 </controller>
             </objects>
             <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--Détail-->
+        <scene sceneID="Zpk-2Z-vQo">
+            <objects>
+                <controller identifier="Détail" title="Détail" id="q3D-It-Pzp"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="347"/>
+        </scene>
+        <!--Confirmation-->
+        <scene sceneID="7Rj-P0-w0N">
+            <objects>
+                <controller identifier="Confirmation" title="Confirmation" id="bzo-cM-Kef"/>
+            </objects>
+            <point key="canvasLocation" x="886" y="347"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
