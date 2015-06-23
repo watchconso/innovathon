@@ -80,21 +80,30 @@
             <objects>
                 <controller identifier="Détail" title="Détail" id="q3D-It-Pzp">
                     <items>
-                        <label alignment="center" text="Paiement par CB" textAlignment="center" id="3l2-c3-zRd"/>
-                        <separator width="0.69999999999999996" alignment="center" id="NdV-6m-Bly"/>
-                        <label alignment="center" text="Pizza DELARTE Voisins-le-Btx" textAlignment="center" numberOfLines="4" id="JyD-Ka-JTB">
-                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
-                        </label>
-                        <separator width="0.69999999999999996" alignment="center" id="iVu-0g-uOo"/>
-                        <label alignment="center" text="-24,98€" textAlignment="center" id="TE7-ws-2LN"/>
-                        <separator width="0.69999999999999996" alignment="center" id="5cC-tw-ogR"/>
-                        <dateLabel alignment="center" textAlignment="center" id="zDB-jK-yEO">
-                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
-                        </dateLabel>
+                        <button alignment="left" id="Lqe-h3-74e">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" id="6Py-Mq-aF1">
+                                <items>
+                                    <label alignment="center" text="Paiement par CB" textAlignment="center" id="3l2-c3-zRd"/>
+                                    <separator width="0.69999999999999996" alignment="center" id="NdV-6m-Bly"/>
+                                    <label alignment="center" text="Pizza DELARTE Voisins-le-Btx" textAlignment="center" numberOfLines="4" id="JyD-Ka-JTB">
+                                        <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                    </label>
+                                    <separator width="0.69999999999999996" alignment="center" id="iVu-0g-uOo"/>
+                                    <label alignment="center" text="-24,98€" textAlignment="center" id="TE7-ws-2LN"/>
+                                    <separator width="0.69999999999999996" alignment="center" id="5cC-tw-ogR"/>
+                                    <dateLabel alignment="center" textAlignment="center" id="zDB-jK-yEO">
+                                        <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                                    </dateLabel>
+                                </items>
+                            </group>
+                            <connections>
+                                <segue destination="AgC-eL-Hgc" kind="modal" id="uCG-j5-2IW"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="653" y="-188"/>
+            <point key="canvasLocation" x="653" y="-240"/>
         </scene>
         <!--Confirmation-->
         <scene sceneID="7Rj-P0-w0N">
@@ -110,6 +119,9 @@
                                 </button>
                                 <button width="0.5" alignment="left" title="Annuler" id="MDe-Q7-zhV">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <segue destination="AgC-eL-Hgc" kind="modal" id="aaK-2c-kzH"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -131,6 +143,9 @@
                                 </button>
                                 <button width="0.5" alignment="left" title="Annuler" id="PBF-Ug-oT2">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <segue destination="AgC-eL-Hgc" kind="modal" id="gPN-Me-4Op"/>
+                                    </connections>
                                 </button>
                             </items>
                         </group>
@@ -177,6 +192,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="gPN-Me-4Op"/>
         <segue reference="Nx3-lN-idg"/>
     </inferredMetricsTieBreakers>
 </document>
