@@ -37,6 +37,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         notification.userInfo = ["Numero Transaction": "44332211" ]
         notification.fireDate = NSDate().dateByAddingTimeInterval(5)
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
+        
     }
     
     
