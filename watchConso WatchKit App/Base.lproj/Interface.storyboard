@@ -17,9 +17,7 @@
                                     <separator width="0.69999999999999996" alignment="center" id="s5C-51-42a"/>
                                     <group width="1" alignment="left" id="TcV-wJ-mWM">
                                         <items>
-                                            <dateLabel width="0.5" alignment="left" id="Biw-05-fNw">
-                                                <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
-                                            </dateLabel>
+                                            <dateLabel width="0.5" alignment="left" format="dd/mm/yy" id="Biw-05-fNw"/>
                                             <label width="0.5" alignment="right" text="-24,98€" textAlignment="right" id="Fxx-qI-cLy"/>
                                         </items>
                                     </group>
@@ -143,9 +141,7 @@
                                     <separator width="0.69999999999999996" alignment="center" id="iVu-0g-uOo"/>
                                     <label alignment="center" text="-24,98€" textAlignment="center" id="TE7-ws-2LN"/>
                                     <separator width="0.69999999999999996" alignment="center" id="5cC-tw-ogR"/>
-                                    <dateLabel alignment="center" textAlignment="center" id="zDB-jK-yEO">
-                                        <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
-                                    </dateLabel>
+                                    <dateLabel alignment="center" textAlignment="center" format="dd/mm/yyyy" id="zDB-jK-yEO"/>
                                 </items>
                             </group>
                             <connections>
@@ -168,6 +164,9 @@
                             <items>
                                 <button width="0.5" alignment="left" title="Valider" id="l6n-k8-Yse">
                                     <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <connections>
+                                        <segue destination="2F0-Tf-fsO" kind="push" id="E1R-S3-i99"/>
+                                    </connections>
                                 </button>
                                 <button width="0.5" alignment="left" title="Annuler" id="MDe-Q7-zhV">
                                     <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -182,54 +181,170 @@
             </objects>
             <point key="canvasLocation" x="583" y="-72"/>
         </scene>
-        <!--Interface Controller-->
+        <!--Synthèse-->
         <scene sceneID="QKP-ke-f3m">
             <objects>
-                <controller id="2F0-Tf-fsO">
+                <controller identifier="Synthese" title="Synthèse" id="2F0-Tf-fsO">
                     <items>
-                        <group width="1" alignment="left" id="pwH-jH-qfA">
+                        <group width="1" alignment="center" id="pwH-jH-qfA">
                             <items>
                                 <label alignment="left" text="Solde au" id="mi1-Sc-Kal"/>
-                                <dateLabel alignment="left" id="ALr-3e-0Pd">
-                                    <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
-                                </dateLabel>
+                                <dateLabel alignment="right" format="dd/MM/yy" id="ALr-3e-0Pd"/>
                             </items>
                         </group>
-                        <label alignment="center" text="856,75 €" textAlignment="center" id="DBd-U9-EAd"/>
-                        <table alignment="left" id="J5D-2K-enJ">
+                        <label alignment="center" text="856,75 €" textAlignment="center" id="DBd-U9-EAd">
+                            <color key="textColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <table alignment="center" id="J5D-2K-enJ">
                             <items>
-                                <tableRow id="0XX-dg-pGk">
-                                    <group key="rootItem" width="1" alignment="left" id="bYa-dc-S9T"/>
-                                </tableRow>
-                                <tableRow id="AAj-hM-DK6">
-                                    <group key="rootItem" width="1" alignment="left" id="rSg-pA-yyp">
+                                <tableRow identifier="QuotiTableRowController" id="0XX-dg-pGk">
+                                    <group key="rootItem" width="1" alignment="left" id="bYa-dc-S9T">
                                         <items>
-                                            <imageView alignment="center" verticalAlignment="center" image="ico_Autre" id="vbl-DC-5ia"/>
-                                            <label alignment="left" text="Label" id="vwb-t1-7km"/>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Vie quotidienne" id="zXD-Cv-wln"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 265,76 €" id="OOh-hn-N1s"/>
                                         </items>
                                     </group>
                                 </tableRow>
-                                <tableRow id="g5y-Hy-7Ac">
-                                    <group key="rootItem" width="1" alignment="left" id="hx3-YV-ffR"/>
+                                <tableRow identifier="SanteTableRowController" id="AAj-hM-DK6">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="rSg-pA-yyp">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Santé" id="vbl-DC-5ia"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 0,00 €" id="vwb-t1-7km"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
-                                <tableRow id="OkB-GM-ald">
-                                    <group key="rootItem" width="1" alignment="left" id="XPj-L0-74x"/>
+                                <tableRow identifier="RestoTableRowController" id="g5y-Hy-7Ac">
+                                    <group key="rootItem" width="1" alignment="left" id="hx3-YV-ffR">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Restaurant" id="ywh-9g-fgr"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 24,98 €" id="UC7-nl-eUb"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
-                                <tableRow id="et1-vX-gdt">
-                                    <group key="rootItem" width="1" alignment="left" id="Jzt-ly-cAG"/>
+                                <tableRow identifier="TransportTableRowController" id="OkB-GM-ald">
+                                    <group key="rootItem" width="1" alignment="left" id="XPj-L0-74x">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Transport" id="ff5-f5-S8T"/>
+                                            <label alignment="right" verticalAlignment="center" text=" - 124,75 €" id="Fem-uI-HkQ"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
-                                <tableRow id="FT0-B9-tCF">
-                                    <group key="rootItem" width="1" alignment="left" id="kxL-H1-7XB"/>
+                                <tableRow identifier="SalaireTableRowController" id="et1-vX-gdt">
+                                    <group key="rootItem" width="1" alignment="left" id="Jzt-ly-cAG">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_SalairesImpôts" id="vwi-P0-qlj"/>
+                                            <label alignment="right" verticalAlignment="center" text="+ 2 234,75 €" id="Y4Z-z9-Wu7"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
-                                <tableRow id="lOu-gt-GzL">
-                                    <group key="rootItem" width="1" alignment="left" id="N0a-Dy-699"/>
+                                <tableRow identifier="LoisirTableRowController" id="FT0-B9-tCF">
+                                    <group key="rootItem" width="1" alignment="left" id="kxL-H1-7XB">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Loisirs" id="1AD-UO-0V1"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 45,75 €" id="AfZ-6u-iVh"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="DiversTableRowController" id="lOu-gt-GzL">
+                                    <group key="rootItem" width="1" alignment="left" id="N0a-Dy-699">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Autre" id="hFt-RO-z67"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 244,75 €" id="oDJ-VH-S67"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <segue destination="PEX-um-SGc" kind="relationship" relationship="nextPage" id="jB7-1E-1pt"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="884" y="-72"/>
+        </scene>
+        <!--Synthése2-->
+        <scene sceneID="d1e-Ip-psz">
+            <objects>
+                <controller identifier="Synthese2" title="Synthése2" id="PEX-um-SGc">
+                    <items>
+                        <group width="1" alignment="center" id="pjM-Sk-FZf">
+                            <items>
+                                <label alignment="left" text="Solde au" id="e0S-R0-dRV"/>
+                                <dateLabel alignment="right" format="dd/MM/yy" id="dFL-Xy-Yee">
+                                    <date key="previewedDate" timeIntervalSinceReferenceDate="434567340">
+                                        <!--2014-10-09 17:09:00 +0000-->
+                                    </date>
+                                </dateLabel>
+                            </items>
+                        </group>
+                        <label alignment="center" text="- 2 378,99 €" textAlignment="center" id="Rq4-PF-ydE">
+                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        </label>
+                        <table alignment="center" id="gDy-6a-NXs">
+                            <items>
+                                <tableRow identifier="TableRowController" id="2tg-S7-0rB">
+                                    <group key="rootItem" width="1" alignment="left" id="T19-Md-azL">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Vie quotidienne" id="G9f-Mz-t6s"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 135,76 €" textAlignment="right" id="DY3-98-Vhg"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="SanteTableRowController" id="8lN-fP-42D">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" id="Fj9-5e-Bjr">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Santé" id="2Ef-uW-s7v"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 57,00 €" textAlignment="right" id="Fbk-io-7sP"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="RestoTableRowController" id="PwD-oP-iB5">
+                                    <group key="rootItem" width="1" alignment="left" id="h6Y-Gk-9jf">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Restaurant" id="t7D-Qf-0x2"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 32,48 €" textAlignment="right" id="1ap-vc-BIJ"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="TransportTableRowController" id="HmV-8X-BIa">
+                                    <group key="rootItem" width="1" alignment="left" id="8EH-KH-cYf">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Transport" id="aJN-r2-yiJ"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 4 124,75 €" textAlignment="right" id="zgu-r3-hXP"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="SalaireTableRowController" id="U0j-OM-1Hf">
+                                    <group key="rootItem" width="1" alignment="left" id="CKy-p9-CRA">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_SalairesImpôts" id="AeJ-Hb-bqz"/>
+                                            <label alignment="right" verticalAlignment="center" text="+ 2 234,75 €" textAlignment="right" id="x9P-GT-tqM"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="LoisirTableRowController" id="m4G-mr-hIO">
+                                    <group key="rootItem" width="1" alignment="left" id="bpW-rq-d0U">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Loisirs" id="XMl-Qa-tsn"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 23,74 €" textAlignment="right" id="ANa-E1-e3k"/>
+                                        </items>
+                                    </group>
+                                </tableRow>
+                                <tableRow identifier="DiversTableRowController" id="wHw-FJ-Bie">
+                                    <group key="rootItem" width="1" alignment="left" id="ZTN-Py-Nig">
+                                        <items>
+                                            <imageView alignment="left" verticalAlignment="center" image="ico_Autre" id="MZH-LV-2TR"/>
+                                            <label alignment="right" verticalAlignment="center" text="- 134,75 €" textAlignment="right" id="kaJ-JP-AaK"/>
+                                        </items>
+                                    </group>
                                 </tableRow>
                             </items>
                         </table>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1062" y="-76"/>
+            <point key="canvasLocation" x="1158" y="-72"/>
         </scene>
         <!--Alerte Fraude-->
         <scene sceneID="bvK-dG-oBu">
