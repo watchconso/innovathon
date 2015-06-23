@@ -24,6 +24,10 @@
 		A1495E0A1B399A4300173DBE /* AlerteFraudeInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E091B399A4300173DBE /* AlerteFraudeInterfaceController.swift */; };
 		A1495E0C1B399B3100173DBE /* ConfirmationInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E0B1B399B3100173DBE /* ConfirmationInterfaceController.swift */; };
 		A1495E101B399CEC00173DBE /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E0F1B399CEC00173DBE /* DetailInterfaceController.swift */; };
+		A1495E121B39C77F00173DBE /* SyntheseInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E111B39C77F00173DBE /* SyntheseInterfaceController.swift */; };
+		A1495E141B39C9B200173DBE /* SyntheseRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E131B39C9B200173DBE /* SyntheseRow.swift */; };
+		A1495E161B39DDAB00173DBE /* Confirmation2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E151B39DDAB00173DBE /* Confirmation2InterfaceController.swift */; };
+		A1495E181B39DDDE00173DBE /* Synthese2InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1495E171B39DDDE00173DBE /* Synthese2InterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +93,10 @@
 		A1495E091B399A4300173DBE /* AlerteFraudeInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlerteFraudeInterfaceController.swift; sourceTree = "<group>"; };
 		A1495E0B1B399B3100173DBE /* ConfirmationInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConfirmationInterfaceController.swift; sourceTree = "<group>"; };
 		A1495E0F1B399CEC00173DBE /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailInterfaceController.swift; sourceTree = "<group>"; };
+		A1495E111B39C77F00173DBE /* SyntheseInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntheseInterfaceController.swift; sourceTree = "<group>"; };
+		A1495E131B39C9B200173DBE /* SyntheseRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SyntheseRow.swift; sourceTree = "<group>"; };
+		A1495E151B39DDAB00173DBE /* Confirmation2InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Confirmation2InterfaceController.swift; sourceTree = "<group>"; };
+		A1495E171B39DDDE00173DBE /* Synthese2InterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Synthese2InterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +195,10 @@
 				A1495E091B399A4300173DBE /* AlerteFraudeInterfaceController.swift */,
 				A1495E0B1B399B3100173DBE /* ConfirmationInterfaceController.swift */,
 				A1495E0F1B399CEC00173DBE /* DetailInterfaceController.swift */,
+				A1495E111B39C77F00173DBE /* SyntheseInterfaceController.swift */,
+				A1495E131B39C9B200173DBE /* SyntheseRow.swift */,
+				A1495E151B39DDAB00173DBE /* Confirmation2InterfaceController.swift */,
+				A1495E171B39DDDE00173DBE /* Synthese2InterfaceController.swift */,
 			);
 			path = "watchConso WatchKit Extension";
 			sourceTree = "<group>";
@@ -396,12 +408,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1495E161B39DDAB00173DBE /* Confirmation2InterfaceController.swift in Sources */,
 				A1495E101B399CEC00173DBE /* DetailInterfaceController.swift in Sources */,
 				0BF459781B39543E00C345B8 /* NotificationController.swift in Sources */,
 				A1495E0C1B399B3100173DBE /* ConfirmationInterfaceController.swift in Sources */,
+				A1495E121B39C77F00173DBE /* SyntheseInterfaceController.swift in Sources */,
+				A1495E181B39DDDE00173DBE /* Synthese2InterfaceController.swift in Sources */,
 				A1495E0A1B399A4300173DBE /* AlerteFraudeInterfaceController.swift in Sources */,
 				0BF459761B39543E00C345B8 /* InterfaceController.swift in Sources */,
 				0BF4597A1B39543E00C345B8 /* GlanceController.swift in Sources */,
+				A1495E141B39C9B200173DBE /* SyntheseRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
