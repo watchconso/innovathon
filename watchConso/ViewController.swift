@@ -19,8 +19,8 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         "100 euros", "200 euros"
     ]
     private let dwarvesImages = [
-        "logo-fam", "logo-fam", "logo-fam", "logo-alim",
-        "logo-fam", "logo-vac"
+        "Habitation", "Habitation", "Loisirs", "Vie quotidienne",
+        "Vie quotidienne", "Loisirs"
     ]
     
     
