@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="6751" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="3737"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="7701"/>
     </dependencies>
     <scenes>
         <!--Opération-->
@@ -11,7 +11,7 @@
                 <controller identifier="Operation" title="Opération" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watchConso_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Carte Pizza DELARTE" id="yJg-aA-LQz"/>
-                        <separator alignment="left" id="s5C-51-42a"/>
+                        <separator width="0.69999999999999996" alignment="center" id="s5C-51-42a"/>
                         <group width="1" alignment="left" id="TcV-wJ-mWM">
                             <items>
                                 <dateLabel width="0.5" alignment="left" id="Biw-05-fNw">
@@ -20,16 +20,21 @@
                                 <label width="0.5" alignment="right" text="-24,98€" textAlignment="right" id="Fxx-qI-cLy"/>
                             </items>
                         </group>
-                        <separator alignment="left" id="LBl-h1-Kre"/>
+                        <separator width="0.69999999999999996" alignment="center" id="LBl-h1-Kre"/>
                         <group width="1" alignment="left" layout="vertical" id="uf7-lw-1iY">
                             <items>
                                 <group width="1" height="40" alignment="left" id="FDc-Qe-veW">
                                     <items>
-                                        <button width="0.5" height="40" alignment="left" title="Quotidien" id="Fgu-WJ-SXU">
+                                        <button width="0.5" height="40" alignment="left" title="Maison" id="Fgu-WJ-SXU">
                                             <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
                                         </button>
                                         <button width="0.5" height="40" alignment="left" title="Loisir" id="Zox-f2-8Qh">
                                             <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="15"/>
+                                            <connections>
+                                                <segue destination="bzo-cM-Kef" kind="modal" id="Nx3-lN-idg"/>
+                                            </connections>
                                         </button>
                                     </items>
                                 </group>
@@ -37,9 +42,11 @@
                                     <items>
                                         <button width="0.5" height="40" alignment="left" title="Divers" id="FTK-jP-kHX">
                                             <color key="backgroundColor" red="0.15101362292895751" green="0.75814096258010388" blue="0.80439157196969702" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
                                         </button>
                                         <button width="0.5" height="40" alignment="left" title="Fraude" id="Wdh-7N-c9j">
                                             <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="font" type="system" pointSize="16"/>
                                         </button>
                                     </items>
                                 </group>
@@ -53,16 +60,66 @@
         <!--Détail-->
         <scene sceneID="Zpk-2Z-vQo">
             <objects>
-                <controller identifier="Détail" title="Détail" id="q3D-It-Pzp"/>
+                <controller identifier="Détail" title="Détail" id="q3D-It-Pzp">
+                    <items>
+                        <label alignment="center" text="Paiement par CB" textAlignment="center" id="3l2-c3-zRd"/>
+                        <separator width="0.69999999999999996" alignment="center" id="NdV-6m-Bly"/>
+                        <label alignment="center" text="Pizza DELARTE Voisins-le-Btx" textAlignment="center" numberOfLines="4" id="JyD-Ka-JTB">
+                            <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                        </label>
+                        <separator width="0.69999999999999996" alignment="center" id="iVu-0g-uOo"/>
+                        <label alignment="center" text="-24,98€" textAlignment="center" id="TE7-ws-2LN"/>
+                        <separator width="0.69999999999999996" alignment="center" id="5cC-tw-ogR"/>
+                        <dateLabel alignment="center" textAlignment="center" id="zDB-jK-yEO">
+                            <dateFormatterStyle key="dateStyle" none="YES" short="YES"/>
+                        </dateLabel>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="553" y="347"/>
+            <point key="canvasLocation" x="518" y="-47"/>
         </scene>
         <!--Confirmation-->
         <scene sceneID="7Rj-P0-w0N">
             <objects>
-                <controller identifier="Confirmation" title="Confirmation" id="bzo-cM-Kef"/>
+                <controller identifier="Confirmation" title="Confirmation" id="bzo-cM-Kef">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Loisir" id="Yuy-HZ-PBZ"/>
+                        <label alignment="center" verticalAlignment="center" text="Confirmer la categorie ?" textAlignment="center" numberOfLines="2" id="aJu-Di-Udc"/>
+                        <group width="1" alignment="left" verticalAlignment="center" id="TYM-QV-fe1">
+                            <items>
+                                <button width="0.5" alignment="left" title="Valider" id="l6n-k8-Yse">
+                                    <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.5" alignment="left" title="Annuler" id="MDe-Q7-zhV">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="886" y="347"/>
+            <point key="canvasLocation" x="518" y="446"/>
+        </scene>
+        <!--Interface Controller-->
+        <scene sceneID="bvK-dG-oBu">
+            <objects>
+                <controller id="k0E-4f-POT">
+                    <items>
+                        <label alignment="center" verticalAlignment="center" text="Confirmer Alerte Fraude ?" textAlignment="center" numberOfLines="2" id="3Bw-yV-u5Z"/>
+                        <group width="1" alignment="left" verticalAlignment="center" id="37P-C4-FQb">
+                            <items>
+                                <button width="0.5" alignment="left" title="Valider" id="Wmx-iR-fTi">
+                                    <color key="backgroundColor" red="0.0" green="0.76897885099999996" blue="0.0043991855440000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                                <button width="0.5" alignment="left" title="Annuler" id="PBF-Ug-oT2">
+                                    <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="518" y="198"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
