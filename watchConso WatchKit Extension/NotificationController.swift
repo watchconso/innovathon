@@ -40,6 +40,12 @@ class NotificationController: WKUserNotificationInterfaceController {
     }
     */
     
+    override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
+        NSLog("Alerte notification RECU **")
+        completionHandler(.Custom)
+        
+    }
+    
     /*
     override func didReceiveRemoteNotification(remoteNotification: [NSObject : AnyObject], withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
         // This method is called when a remote notification needs to be presented.

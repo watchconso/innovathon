@@ -352,7 +352,9 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                        <label width="1" alignment="left" text="Alert Label" textAlignment="center" id="XkS-y5-khE">
+                            <color key="textColor" red="0.18039216101169586" green="0.99215692281723022" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
+                        </label>
                     </items>
                     <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
                     <connections>

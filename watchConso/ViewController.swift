@@ -26,6 +26,20 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     let simpleTableIdentifier = "SimpleTableIdentifier"
 
+    
+    @IBAction func pushNotifSend(sender: AnyObject) {
+        var notification = UILocalNotification()
+        
+        notification.alertBody = "Virement - 50€"
+        notification.alertTitle = "opé à classer"
+        notification.soundName = UILocalNotificationDefaultSoundName
+        notification.category = "myCategory"
+        notification.userInfo = ["Numero Transaction": "44332211" ]
+        notification.fireDate = NSDate().dateByAddingTimeInterval(5)
+        UIApplication.sharedApplication().scheduleLocalNotification(notification)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
