@@ -23,14 +23,21 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         "ico_Salaires", "ico_Loisirs"
     ]
     
-    
     let simpleTableIdentifier = "SimpleTableIdentifier"
 
+    @IBOutlet weak var myTableView: UITableView!
     
     @IBAction func pushNotifSend(sender: AnyObject) {
         var notification = UILocalNotification()
         
-        notification.alertBody = "Virement - 50€"
+        let myIndexTableView = myTableView.indexPathForSelectedRow()?.row
+        let opMontant = dwarvesMontant[myIndexTableView!]
+        let opLibelle = dwarves[myIndexTableView!]
+        
+        NSLog("Index Table : \(myIndexTableView!) - Libellé : \(opLibelle)")
+
+        
+        notification.alertBody = "Virement - \(opLibelle) - \(opMontant)"
         notification.alertTitle = "opé à classer"
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.category = "myCategory"
@@ -76,6 +83,14 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
             return cell!
     }
 
+    func tableView(tableView: UITableView,
+        didSelectRowAtIndexPath indexPath: NSIndexPath) {
+            let rowValue = dwarves[indexPath.row]
+            let message = "You selected \(rowValue)"
+            
+            NSLog("Infos Cellule : \(message)")
+
+    }
     
 }
 

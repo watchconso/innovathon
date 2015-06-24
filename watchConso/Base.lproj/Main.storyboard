@@ -49,15 +49,18 @@
                     </view>
                     <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="myTableView" destination="es7-dB-liT" id="xwJ-Wr-bId"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-94" y="-398"/>
         </scene>
-        <!--View Controller-->
+        <!--Saisie View Controller-->
         <scene sceneID="Jmg-My-epM">
             <objects>
-                <viewController id="6ak-9w-2IG" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Ecran_Saisie_Op" id="6ak-9w-2IG" customClass="SaisieViewController" customModule="watchConso" customModuleProvider="target" sceneMemberID="viewController">
                     <label key="view" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test new page" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8qd-tb-U8i">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
