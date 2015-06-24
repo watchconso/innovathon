@@ -11,11 +11,11 @@ import UIKit
 class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegate {
     
     private let dwarves = [
-        "EDF", "GDF", "Virement Papa", "Carrefour",
+        "EDF", "GDF", "Goum RU", "Carrefour",
         "Paie CASA Jan15", "Amazon", "Pizza DELA..."
     ]
     private let dwarvesMontant = [
-        "36,76 euros", "45,87 euros", "15 euros", "67,87 euros",
+        "36,76 euros", "45,87 euros", "5350 euros", "67,87 euros",
         "2275,76 euros", "199 euros", "24,98 euros"
     ]
     private let dwarvesImages = [
