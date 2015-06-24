@@ -400,18 +400,21 @@
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_SalairesImpots" id="9fd-HO-m3J"/>
                                         <label alignment="right" verticalAlignment="center" text="+ 2 347,45 €" id="CNI-we-BOg"/>
                                     </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </group>
                                 <group width="1" height="23" alignment="left" id="SC7-od-gEj">
                                     <items>
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_Transport" id="L2l-OK-wCZ"/>
                                         <label alignment="right" verticalAlignment="center" text="- 278,76 €" id="SnB-vK-mhI"/>
                                     </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </group>
                                 <group width="1" height="23" alignment="left" id="HKh-CJ-9p1">
                                     <items>
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_Vie quotidienne" id="8tc-jc-eVi"/>
                                         <label alignment="right" verticalAlignment="center" text="- 230,65 €" id="XNv-cF-68f"/>
                                     </items>
+                                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                 </group>
                             </items>
                         </group>
