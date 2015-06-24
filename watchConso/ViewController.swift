@@ -12,15 +12,15 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
     
     private let dwarves = [
         "EDF", "GDF", "Virement Papa", "Carrefour",
-        "Paie CASA Jan15", "Amazon"
+        "Paie CASA Jan15", "Amazon", "Pizza DELA..."
     ]
     private let dwarvesMontant = [
         "36,76 euros", "45,87 euros", "15 euros", "67,87 euros",
-        "2275,76 euros", "199 euros"
+        "2275,76 euros", "199 euros", "24,98 euros"
     ]
     private let dwarvesImages = [
         "ico_Vie quotidienne", "ico_Vie quotidienne", "ico_Loisirs", "ico_Vie quotidienne",
-        "ico_Salaires", "ico_Loisirs"
+        "ico_Salaires", "ico_Loisirs", "ico_Loisirs"
     ]
     
     let simpleTableIdentifier = "SimpleTableIdentifier"
@@ -37,7 +37,7 @@ class ViewController: UIViewController,UITableViewDataSource, UITableViewDelegat
         NSLog("Index Table : \(myIndexTableView!) - Libellé : \(opLibelle)")
 
         
-        notification.alertBody = "Virement - \(opLibelle) - \(opMontant)"
+        notification.alertBody = "Paiement par CB - \(opLibelle) - \(opMontant)"
         notification.alertTitle = "opé à classer"
         notification.soundName = UILocalNotificationDefaultSoundName
         notification.category = "myCategory"
