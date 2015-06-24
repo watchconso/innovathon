@@ -207,7 +207,7 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="364" y="432"/>
+            <point key="canvasLocation" x="364" y="442"/>
         </scene>
         <!--Warning-->
         <scene sceneID="g81-wC-Cfb">
@@ -299,6 +299,9 @@
                             </items>
                         </table>
                     </items>
+                    <connections>
+                        <outlet property="table" destination="zBa-Si-cU7" id="d2P-M1-578"/>
+                    </connections>
                 </controller>
             </objects>
             <point key="canvasLocation" x="1275" y="233"/>
