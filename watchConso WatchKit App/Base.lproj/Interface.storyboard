@@ -395,19 +395,19 @@
                                 <label alignment="center" text="+ 856,75 €" textAlignment="center" id="Qn1-H3-FNP">
                                     <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </label>
-                                <group width="1" height="25" alignment="left" id="b95-iq-xax">
+                                <group width="1" height="23" alignment="left" id="b95-iq-xax">
                                     <items>
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_SalairesImpots" id="9fd-HO-m3J"/>
                                         <label alignment="right" verticalAlignment="center" text="+ 2 347,45 €" id="CNI-we-BOg"/>
                                     </items>
                                 </group>
-                                <group width="1" height="25" alignment="left" id="SC7-od-gEj">
+                                <group width="1" height="23" alignment="left" id="SC7-od-gEj">
                                     <items>
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_Transport" id="L2l-OK-wCZ"/>
                                         <label alignment="right" verticalAlignment="center" text="- 278,76 €" id="SnB-vK-mhI"/>
                                     </items>
                                 </group>
-                                <group width="1" height="25" alignment="left" id="HKh-CJ-9p1">
+                                <group width="1" height="23" alignment="left" id="HKh-CJ-9p1">
                                     <items>
                                         <imageView width="23" height="23" alignment="left" verticalAlignment="center" image="ico_Vie quotidienne" id="8tc-jc-eVi"/>
                                         <label alignment="right" verticalAlignment="center" text="- 230,65 €" id="XNv-cF-68f"/>
