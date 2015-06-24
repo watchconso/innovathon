@@ -429,7 +429,7 @@
             <objects>
                 <notificationController id="YCC-NB-fut">
                     <items>
-                        <label width="1" alignment="left" text="Alert Label" textAlignment="center" id="XkS-y5-khE">
+                        <label width="1" alignment="left" text="Alert Label" textAlignment="center" numberOfLines="3" id="XkS-y5-khE">
                             <color key="textColor" red="0.18039216101169586" green="0.99215692281723022" blue="0.18431372940540314" alpha="1" colorSpace="deviceRGB"/>
                             <fontDescription key="font" type="system" pointSize="16"/>
                         </label>
@@ -448,7 +448,7 @@
             <objects>
                 <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="watchConso_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <label width="1" alignment="left" text="Alert Label" textAlignment="center" id="MdI-Ga-xvA">
+                        <label width="1" alignment="left" text="Alert Label" textAlignment="center" numberOfLines="3" id="MdI-Ga-xvA">
                             <color key="textColor" red="0.180392161" green="0.99215692280000001" blue="0.18431372939999999" alpha="1" colorSpace="deviceRGB"/>
                         </label>
                     </items>
@@ -462,6 +462,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7X-3B-Tzz"/>
-        <segue reference="1As-UR-QV6"/>
+        <segue reference="E1R-S3-i99"/>
     </inferredMetricsTieBreakers>
 </document>
