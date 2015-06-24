@@ -207,19 +207,28 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="693" y="233"/>
+            <point key="canvasLocation" x="364" y="432"/>
         </scene>
         <!--Warning-->
         <scene sceneID="g81-wC-Cfb">
             <objects>
                 <controller identifier="Warning" title="Warning" id="nXP-tj-PRH">
                     <items>
-                        <imageView alignment="center" verticalAlignment="center" image="ico_SoldeNeg" id="zLD-X1-zQL"/>
-                        <label alignment="center" verticalAlignment="center" text="Attention votre solde est négatif" textAlignment="center" numberOfLines="3" id="2uh-VT-cRW"/>
+                        <button alignment="center" verticalAlignment="center" id="5xD-Rm-Qgh">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" id="Fdv-nl-Vxi">
+                                <items>
+                                    <imageView alignment="center" verticalAlignment="center" image="ico_SoldeNeg" id="zLD-X1-zQL"/>
+                                    <label alignment="center" verticalAlignment="center" text="Attention votre solde est négatif" textAlignment="center" numberOfLines="3" id="2uh-VT-cRW"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <segue destination="PEX-um-SGc" kind="push" id="Opr-wZ-vzk"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1003" y="233"/>
+            <point key="canvasLocation" x="995" y="442"/>
         </scene>
         <!--Synthèse-->
         <scene sceneID="QKP-ke-f3m">
@@ -320,19 +329,28 @@
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="442" y="454"/>
+            <point key="canvasLocation" x="561" y="260"/>
         </scene>
         <!--Confirmation Fraude-->
         <scene sceneID="YzM-To-UA9">
             <objects>
                 <controller identifier="Confirmation Fraude" title="Confirmation Fraude" id="qCx-UB-iig">
                     <items>
-                        <imageView alignment="center" verticalAlignment="center" image="ico_Fraude" id="xBi-ZU-QcY"/>
-                        <label alignment="center" verticalAlignment="center" text="Alerte Fraude envoyée avec succés" textAlignment="center" numberOfLines="3" id="jKN-mY-qlc"/>
+                        <button alignment="center" verticalAlignment="center" id="3Lv-Ak-NDW">
+                            <group key="contentGroup" width="1" alignment="left" layout="vertical" id="WXm-Df-7cn">
+                                <items>
+                                    <imageView alignment="center" verticalAlignment="center" image="ico_Fraude" id="xBi-ZU-QcY"/>
+                                    <label alignment="center" verticalAlignment="center" text="Alerte Fraude envoyée avec succés" textAlignment="center" numberOfLines="3" id="jKN-mY-qlc"/>
+                                </items>
+                            </group>
+                            <connections>
+                                <segue destination="2F0-Tf-fsO" kind="push" id="1As-UR-QV6"/>
+                            </connections>
+                        </button>
                     </items>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="1003" y="557"/>
+            <point key="canvasLocation" x="990" y="132"/>
         </scene>
         <!--Glance Interface Controller-->
         <scene sceneID="BOz-TT-tkC">
@@ -375,5 +393,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="d7X-3B-Tzz"/>
+        <segue reference="1As-UR-QV6"/>
     </inferredMetricsTieBreakers>
 </document>
