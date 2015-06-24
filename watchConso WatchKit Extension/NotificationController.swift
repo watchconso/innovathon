@@ -40,8 +40,12 @@ class NotificationController: WKUserNotificationInterfaceController {
     }
     */
     
+    @IBOutlet weak var labelNotif: WKInterfaceLabel!
     override func didReceiveLocalNotification(localNotification: UILocalNotification, withCompletion completionHandler: ((WKUserNotificationInterfaceType) -> Void)) {
         NSLog("Alerte notification RECU **")
+        
+        labelNotif.setText(localNotification.alertBody)
+        
         completionHandler(.Custom)
         
     }
